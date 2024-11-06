@@ -1,18 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap');
 
-html, body {
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
   margin: 0;
   padding: 0;
 }
 
-html, body, .container {
+html,
+body,
+.container {
   overflow: auto;
 }
 
 
 body {
-  background: rgb(0,163,255);
-  background: linear-gradient(90deg, rgba(0,163,255,1) 0%, rgba(189,0,255,1) 100%);
+  background: rgb(0, 163, 255);
+  background: linear-gradient(90deg, rgba(0, 163, 255, 1) 0%, rgba(189, 0, 255, 1) 100%);
   background-attachment: fixed;
   font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
@@ -60,13 +70,12 @@ body {
 
 }
 
-.open { 
+.open {
   visibility: unset;
   transform: translateX(0)
-
 }
 
-.nav-links {  
+.nav-links {
   list-style-type: none;
   padding: 0;
   text-transform: uppercase;
@@ -74,8 +83,8 @@ body {
 }
 
 .nav-link a {
-  display: block;  
-  color: white;  
+  display: block;
+  color: white;
   line-height: 2.5rem;
   text-decoration: none;
   font-weight: 400;
@@ -122,6 +131,7 @@ section {
   margin-left: 2.6em;
   margin-right: 2.6em;
 }
+
 .cv {
   display: grid;
   align-content: center;
@@ -134,14 +144,14 @@ section {
   line-height: 2.367em;
 }
 
-.content > h1 {
+.content>h1 {
   line-height: 1em;
   color: white;
   font-weight: 800;
-  font-size: clamp(3em, 3em + 1vw, 4em); 
+  font-size: clamp(3em, 3em + 1vw, 4em);
 }
 
-.content > p {
+.content>p {
   color: #847D93;
   font-size: 2.1em;
   margin-bottom: 2.87rem;
@@ -169,6 +179,7 @@ section {
 .cta:hover {
   background-color: #00A3FF;
 }
+
 /* END MAIN CONTENT/SECTION  */
 
 @media(min-width: 500px) {
@@ -183,27 +194,32 @@ section {
     background-position: 10em;
 
   }
+
   .left-col {
     position: unset;
   }
+
   .back-btn {
     visibility: hidden;
   }
+
   .sidebar {
     position: unset;
-    visibility:visible;
+    visibility: visible;
     transform: unset;
   }
 
   .menu-btn {
     visibility: hidden;
   }
+
   .logo {
     text-align: left;
   }
+
   .cv {
     align-content: start;
-    max-width: 75%;    
+    max-width: 75%;
   }
 
   .content {
@@ -213,8 +229,8 @@ section {
   /* .content > h1 {
     font-size: 4em; 
   } */
-  
-  .content > p {
+
+  .content>p {
     font-size: 3em;
 
   }
